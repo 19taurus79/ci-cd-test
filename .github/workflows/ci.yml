@@ -17,3 +17,9 @@ jobs:
         uses: py-actions/flake8@v2
         with:
           max-line-length: "121"
+
+  black:
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v3
+        - uses: psf/black@stable
