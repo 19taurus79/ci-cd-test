@@ -23,3 +23,12 @@ jobs:
     steps:
         - uses: actions/checkout@v3
         - uses: psf/black@stable
+
+  doctest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - run: python -m doctest -v calc.py
