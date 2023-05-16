@@ -8,4 +8,4 @@ def add(a, b):
     6.0
     """
 
-    return float(a+b)
+    return float(a + b)
