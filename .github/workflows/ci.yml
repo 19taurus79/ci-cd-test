@@ -32,4 +32,4 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m doctest -v calc.py
-      - run: python -m doctest -v echo.py
+      - run: python -m doctest -v bot/handlers/echo.py
